@@ -1,0 +1,63 @@
+ /* Grid layoud index*/
+  .contenedor{
+        display: grid;
+        grid-template-areas:    "header     header" 
+                                "texto      texto"
+                                "formulario  ."
+                                "footer  footer";
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto auto auto; 
+        justify-content: center;
+
+        header{
+            grid-area: header;
+            justify-content: center;
+        }
+        main{
+            
+            .textos{
+                grid-area: texto;
+                align-content: center;
+            }
+        }
+
+
+        .formulario{
+            grid-area: formulario;
+            justify-content: center;
+        }
+    
+
+    footer{
+        grid-area: footer;
+        justify-content: center;
+        text-align: center;
+    }
+
+}
+/*layaud html*/
+.contenedorMenu{
+    display: grid;
+    grid-template-areas:    "header     header" 
+                            "main       main"
+                            "footer     footer";
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto; 
+    justify-content: center;
+
+    header{
+        grid-area: header;
+        justify-content: center;
+    }
+    
+    main{
+            grid-area: main;
+            justify-content: center;
+    }
+
+    footer{
+        grid-area: footer;
+        justify-content: center;
+        text-align: center;
+    }
+}

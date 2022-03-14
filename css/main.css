@@ -1,0 +1,184 @@
+header .img {
+  width: 100vh;
+  height: 80%;
+  display: flex;
+  margin: auto;
+  flex-direction: row;
+  justify-content: center; }
+
+header .navegacion .menu {
+  text-decoration: none;
+  position: relative;
+  font-weight: bold;
+  margin-right: auto;
+  margin-left: auto;
+  color: white; }
+
+header .navegacion ul {
+  list-style: none; }
+
+header .navegacion li {
+  display: flex;
+  justify-content: center;
+  padding: 15px 20px;
+  position: relative;
+  display: inline-block; }
+
+header .navegacion a {
+  display: flex;
+  display: inline-block;
+  width: 100%;
+  justify-content: center;
+  margin: 40px;
+  justify-content: space-between;
+  font-weight: bold;
+  text-decoration: none;
+  color: aliceblue;
+  text-align: center; }
+
+header {
+  width: 90%; }
+
+/*estilos del body*/
+body {
+  margin: 0;
+  padding: 0; }
+
+/*anidaciones*/
+body {
+  background-color: black;
+  color: white; }
+
+/* EStilos y tipografias de main*/
+main .textos {
+  display: flex;
+  flex-wrap: nowrap; }
+  main .textos .text1 {
+    width: 50%;
+    border: solid white;
+    margin: 10px;
+    color: black;
+    background-color: white; }
+  main .textos .text2 {
+    width: 50%;
+    border: solid white;
+    margin: 10px;
+    color: black;
+    background-color: white; }
+  main .textos .sub {
+    font-style: oblique;
+    text-align: center; }
+  main .textos h3 {
+    background-color: black;
+    padding: 20px 10px;
+    color: white; }
+
+main .somos {
+  color: black;
+  width: 80%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  text-align: justify;
+  background-color: #d1d1d1;
+  font-size: 1em; }
+
+/* Estilos del Footer*/
+footer .redes {
+  color: white;
+  text-decoration: none;
+  background-color: black;
+  display: flex;
+  display: inline-block;
+  margin: 15px;
+  padding: 5px;
+  border: solid blanchedalmond;
+  border-radius: 1em / 2em;
+  justify-content: center; }
+
+/* Grid layoud index*/
+.contenedor {
+  display: grid;
+  grid-template-areas: "header     header"  "texto      texto" "formulario  ." "footer  footer";
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto auto auto;
+  justify-content: center; }
+  .contenedor header {
+    grid-area: header;
+    justify-content: center; }
+  .contenedor main .textos {
+    grid-area: texto;
+    align-content: center; }
+  .contenedor .formulario {
+    grid-area: formulario;
+    justify-content: center; }
+  .contenedor footer {
+    grid-area: footer;
+    justify-content: center;
+    text-align: center; }
+
+/*layaud html*/
+.contenedorMenu {
+  display: grid;
+  grid-template-areas: "header     header"  "main       main" "footer     footer";
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto auto;
+  justify-content: center; }
+  .contenedorMenu header {
+    grid-area: header;
+    justify-content: center; }
+  .contenedorMenu main {
+    grid-area: main;
+    justify-content: center; }
+  .contenedorMenu footer {
+    grid-area: footer;
+    justify-content: center;
+    text-align: center; }
+
+/*mediaqueries index*/
+@media screen and (max-width: 1024px) {
+  nav ul li a {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%; }
+  main .textos {
+    flex-direction: column;
+    text-align: center;
+    margin: 30px;
+    justify-content: center;
+    margin-left: 100px; }
+    main .textos .text1 {
+      width: 100%;
+      text-align: center;
+      justify-content: center; }
+    main .textos .text2 {
+      width: 100%; }
+  main form .formulario {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; } }
+
+@media screen and (max-width: 480px) {
+  nav ul li a {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%; }
+  main .textos {
+    flex-direction: column;
+    text-align: center;
+    margin: 20px;
+    justify-content: center;
+    margin-left: 100px; }
+    main .textos .text1 {
+      width: 100%;
+      text-align: center;
+      justify-content: center; }
+    main .textos .text2 {
+      width: 100%; }
+  main form .formulario {
+    display: none; } }
